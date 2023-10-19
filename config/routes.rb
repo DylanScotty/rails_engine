@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       namespace :merchants do
         resources :find, only: [:index], controller: "search"
+        resources :find_all, only: [:index], controller: "search"
       end
       namespace :items do
         resources :find_all, only: [:index], controller: "search"
